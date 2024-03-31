@@ -24,4 +24,4 @@ run: $(EXEC)
 	python3 ./divideAndConquer.py
 
 clean:
-	rm -f $(OBJS) $(EXEC) basic.png
+	rm -f $(OBJS) $(EXEC) basic.png values.txt divideAndConquer.png
