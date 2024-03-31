@@ -1,6 +1,9 @@
 #include <iostream>
 #include <vector>
+#include <string>
 #include <chrono>
+#include <fstream>
+#include <bits/stdc++.h>
 #include "matplotlibcpp.h"
 
 using namespace std;
@@ -18,49 +21,42 @@ int binomialCoeff(int n, int k) {
 }
 
 int main() {
-    int n = 30;
-    // std::vector<int> x(n), y(n), z(n), w(n,2);
-    // for (int k = 1; k < n - 1; ++k) {
-    //     x.at(k) = k;
-        // auto start = high_resolution_clock::now();
-        // binomialCoeff(n, k);
-        // auto stop = high_resolution_clock::now();
-        // auto duration = duration_cast<std::chrono::nanoseconds>(stop - start);
-        // y.at(k) = duration.count();
-    // }
-    // // Print the values
-    // for (int i = 0; i < x.size(); ++i) {
-    //     cout << "For k = " << x[i] << ", Time taken: " << y[i] << " nanoseconds" << endl;
-    // }
+    int s = 35;
+    std::vector<double> x, y, z;
+    fstream file;
+    file.open("../pares.txt", ios::in);
+    if (!file){cout<<"no such file";}
+    else{
+        string line;
+        while (std::getline(file, line)) {
+            stringstream ss(line);
+            string word;
+            while (std::getline(ss, word, ',')) {
+                x.push_back(stof(word));
+                std::getline(ss, word, ',');
+                y.push_back(stof(word));
+            }
+        }
+    }
+    for (int k = 0; k<x.size(); k++){
+        cout<<x.at(k)<<","<<y.at(k)<<endl;
+    }
+    std::ofstream outfile("values.txt", std::ios::app);
     // Prepare data.
-    std::vector<double> x(n), y(n), z(n), w(n,2);
-    for(int i=1; i<n-1; ++i) {
-        x.at(i) = i;
+    for(int i=0; i<x.size(); i++) {
+        int n = x.at(i);
+        int k = y.at(i);
         auto start = high_resolution_clock::now();
-        binomialCoeff(n, i);
+        binomialCoeff(n, k);
         auto stop = high_resolution_clock::now();
         auto duration = duration_cast<std::chrono::nanoseconds>(stop - start);
-        y.at(i) = duration.count();
-        // z.at(i) = log(i);
+        outfile<<n;
+        outfile << ",";
+        outfile<<k;
+        outfile<<",";
+        outfile<<duration.count();
+        outfile<<"\n";
     }
-
-    // Set the size of output image to 1200x780 pixels
-    plt::figure_size(2000, 2000);
-    // Plot line from given x and y data. Color is selected automatically.
-    plt::plot(x, y);
-    // Plot a red dashed line from given x and y data.
-    // plt::plot(x, w,"r--");
-    // Plot a line whose name will show up as "log(x)" in the legend.
-    // plt::named_plot("log(x)", x, z);
-    // Set x-axis to interval [0,1000000]
-    plt::ylim(0, 1000*1000);
-    // Add graph title
-    plt::title("Divide And Conquer");
-    // Enable legend.
-    plt::legend();
-    // Save the image (file format is determined by the extension)
-    plt::save("./basic.png");
-
-    
+    outfile.close();
     return 0;
 }
