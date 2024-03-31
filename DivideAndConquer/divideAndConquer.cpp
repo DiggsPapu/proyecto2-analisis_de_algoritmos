@@ -38,9 +38,6 @@ int main() {
             }
         }
     }
-    for (int k = 0; k<x.size(); k++){
-        cout<<x.at(k)<<","<<y.at(k)<<endl;
-    }
     std::ofstream outfile("values.txt", std::ios::app);
     // Prepare data.
     for(int i=0; i<x.size(); i++) {

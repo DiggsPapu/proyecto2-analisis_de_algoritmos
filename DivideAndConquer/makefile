@@ -14,12 +14,14 @@ all: $(EXEC)
 $(EXEC): $(OBJS)
 	$(CC) $(CFLAGS) -I$(PYTHON_INCLUDE) $(OBJS) -o $(EXEC) $(PYTHON_LIB)
 	./$(EXEC)
+	python3 ./divideAndConquer.py
 
 %.o: %.cpp
 	$(CC) $(CFLAGS) -I$(PYTHON_INCLUDE) -c $< -o $@
 
 run: $(EXEC)
 	./$(EXEC)
+	python3 ./divideAndConquer.py
 
 clean:
 	rm -f $(OBJS) $(EXEC) basic.png
