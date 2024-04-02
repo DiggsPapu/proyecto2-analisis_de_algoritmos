@@ -22,7 +22,8 @@ ax = fig.add_subplot(111, projection='3d')
 ax.scatter(x, y, z, c='r', marker='o')
 
 # Set labels
-ax.set_xlabel('X Label')
-ax.set_ylabel('Y Label')
-ax.set_zlabel('Z Label')
+ax.set_xlabel('Valor de n')
+ax.set_ylabel('Valor de k')
+ax.set_zlabel('Tiempo de Ejecución (segundos)')
+plt.title('Divide and Conquer - Tiempos de ejecución')
 plt.savefig('divideAndConquer.png')

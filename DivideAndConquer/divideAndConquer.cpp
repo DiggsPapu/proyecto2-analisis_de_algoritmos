@@ -12,6 +12,7 @@ namespace plt = matplotlibcpp;
 
 // Function to calculate binomial coefficient recursively
 int binomialCoeff(int n, int k) {
+    // cout<<n<<":"<<k<<endl;
     if (k > n)
         return 0;
     if (k == 0 || k == n)

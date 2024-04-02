@@ -64,6 +64,8 @@ ax.set_xlabel('Valor de n')
 ax.set_ylabel('Valor de k')
 ax.set_zlabel('Tiempo de Ejecución (segundos)')
 
-plt.title('Tiempo de Ejecución del Programa')
+plt.title('Programación dinámica - Tiempos de ejecución')
 
 plt.show()
+
+plt.savefig('programacionDinamica.png')
