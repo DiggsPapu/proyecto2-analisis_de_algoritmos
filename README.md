@@ -1,14 +1,14 @@
 # Proyecto 2 - Coeficientes binomiales
 
 ## Contenido
-- [Definición y enunciado del problema](https://github.com/DiggsPapu/proyecto2-analisis_de_algoritmos/edit/main/README.md#definici%C3%B3n-y-enunciado-del-problema)
-- [Objetivos](https://github.com/DiggsPapu/proyecto2-analisis_de_algoritmos/edit/main/README.md#objetivos)
-  - [General](https://github.com/DiggsPapu/proyecto2-analisis_de_algoritmos/edit/main/README.md#general)
-  - [Específicos](https://github.com/DiggsPapu/proyecto2-analisis_de_algoritmos/edit/main/README.md#espec%C3%ADficos)
-- [Temas vistos](https://github.com/DiggsPapu/proyecto2-analisis_de_algoritmos/edit/main/README.md#temas-vistos)
-- [Entradas utilizadas](https://github.com/DiggsPapu/proyecto2-analisis_de_algoritmos/edit/main/README.md#entradas-utilizadas)
-- [Documento](https://github.com/DiggsPapu/proyecto2-analisis_de_algoritmos/edit/main/README.md#documento)
-- [Integrantes](https://github.com/DiggsPapu/proyecto2-analisis_de_algoritmos/edit/main/README.md#integrantes)
+- [Definición y enunciado del problema](https://github.com/DiggsPapu/proyecto2-analisis_de_algoritmos?tab=readme-ov-file#definici%C3%B3n-y-enunciado-del-problema)
+- [Objetivos](https://github.com/DiggsPapu/proyecto2-analisis_de_algoritmos?tab=readme-ov-file#objetivos)
+  - [General](https://github.com/DiggsPapu/proyecto2-analisis_de_algoritmos?tab=readme-ov-file#general)
+  - [Específicos](https://github.com/DiggsPapu/proyecto2-analisis_de_algoritmos?tab=readme-ov-file#espec%C3%ADficos)
+- [Temas vistos](https://github.com/DiggsPapu/proyecto2-analisis_de_algoritmos?tab=readme-ov-file#temas-vistos)
+- [Entradas utilizadas](https://github.com/DiggsPapu/proyecto2-analisis_de_algoritmos?tab=readme-ov-file#entradas-utilizadas)
+- [Documento](https://github.com/DiggsPapu/proyecto2-analisis_de_algoritmos?tab=readme-ov-file#documento)
+- [Integrantes](https://github.com/DiggsPapu/proyecto2-analisis_de_algoritmos?tab=readme-ov-file#integrantes)
 
 ## Definición y enunciado del problema
 La combinatoria es una rama de la matemática que es englobada por el área de la matemática discreta la cual estudia la enumeración, construcción y existencia de algunas propiedades de configuraciones que satisfacen ciertas condiciones preestablecidas. Por lo tanto, dentro de esta área se puede definir que, además de muchos otros conceptos, se estudian los coeficientes binomiales, los cuales se definen, de una manera básica y sencilla, como las distintas formas en que se puede generar un subconjunto a partir de un conjunto base dado.
